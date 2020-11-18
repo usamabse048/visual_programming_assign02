@@ -1,0 +1,27 @@
+﻿<Window x:Class="usama_ilyas_sp18_bse_048_assgin02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:usama_ilyas_sp18_bse_048_assgin02"
+        mc:Ignorable="d"
+        Title="Student Portal by Usama Ilyas" Height="700" Width="500" FontFamily="Bahnschrift SemiCondensed" FontSize="14" Foreground="#FFF6F3F3" Background="Black">
+    <Grid Background="#FF36393F">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="loginScreenHeading" Content="Student Portal" HorizontalAlignment="Left" Margin="87,129,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" FontSize="18" Foreground="White" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <Label Content="Reg#" HorizontalAlignment="Left" Margin="42,187,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="regNum" HorizontalAlignment="Left" Margin="41,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="418" Height="45" SelectionBrush="#FFD700B9" FontStyle="Oblique" FontSize="16" AutomationProperties.HelpText="SP18-BSE-048" TextAlignment="Left" Padding="12" Background="#FF303239" BorderBrush="Black" Panel.ZIndex="5" BorderThickness="1,1,1,1" Foreground="#FFF6F3F3" Grid.ColumnSpan="5" />
+        <Label Content="Password" HorizontalAlignment="Left" Margin="44,308,0,0" VerticalAlignment="Top" Foreground="#FFF7F3F3" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" Margin="43,350,0,0"  VerticalAlignment="Top" Width="418" Height="45" SelectionBrush="#FFD73E00" FontStyle="Oblique" FontSize="16"  Padding="12" PasswordChar="*" Visibility="Visible" Background="#FF303339" BorderBrush="Black" Foreground="#FFF6F3F3" Grid.ColumnSpan="5" />
+        <Button x:Name="loginBtn" Content="Login" Grid.Column="1" Margin="111.6,467,10.4,0" VerticalAlignment="Top" Click="loginBtnClick" Background="#FF7289DA" Foreground="White" FontSize="18" Padding="8,5,8,5"/>
+        <Button x:Name="createAccountBtn" Content="Create New Account" Grid.Column="1" HorizontalAlignment="Left" Margin="60,584,0,0" VerticalAlignment="Top" Click="createAccountBtnClick" Background="#FF7289DA" Foreground="White" FontSize="18" Padding="8,5,8,5" Grid.ColumnSpan="3" Width="184"/>
+
+
+    </Grid>
+</Window>
